@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 // import One from './components/One'
 // import Two from "./components/Two";
-import Three from './components/Three'
+// import Three from './components/Three'
+import Four from './components/Four';
 
 class App extends Component {
   //构造函数的应用点？
@@ -29,7 +30,7 @@ class App extends Component {
           txt: "cc",
           flag: false,
         },
-      ],
+      ]
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -52,26 +53,27 @@ class App extends Component {
       return item;
     });
     this.setState({
-      list,
+      list
     });
   }
   render() {
-    let { list } = this.state;
+    // let { list } = this.state;
     console.log("App--render...2");
     return (
       <div>
         {/* <button onClick = {this.handleClick}>更改自身的状态</button> */}
         {/* <One n = {this.state.n}/> */}
-        <ul>
+        {/* <ul>
           {list.map((item) => {
             return (
               <li key={item.id}>
-                {/* <Two flag = {item.flag} item = {item} handleChange = {this.handleChange}></Two> */}
+                <Two flag = {item.flag} item = {item} handleChange = {this.handleChange}></Two>
                 <Three flag = {item.flag} item = {item} handleChange = {this.handleChange}></Three>
               </li>
             );
           })}
-        </ul>
+        </ul> */}
+        <Four></Four>
       </div>
     );
   }
