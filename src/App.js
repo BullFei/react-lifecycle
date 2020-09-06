@@ -26,7 +26,7 @@ class App extends Component {
     console.log('App--componentDidMount...3');
   }
   render(){
-    console.log('App--render...2');
+    console.log( 'App--render...2');
     return (
       <div>
         <button onClick = {this.handleClick}>更改自身的状态</button>
